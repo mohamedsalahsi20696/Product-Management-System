@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styleesheet-login.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <section id="submitform" class="d-none">
+        <div class="container my-5 text-center">
+            <div class="group m-auto w-75 p-5">
+                <h1>smart signup system</h1>
+
+                <input id="signupName" class="form-control my-3 bg-transparent text-white" placeholder="Enter your name"
+                    autofocus>
+
+                <input id="signupEmail" class="form-control my-3 bg-transparent text-white"
+                    placeholder="Enter your email">
+
+                <input id="signupPassword" class="form-control my-3 bg-transparent text-white"
+                    placeholder="Enter password" type="password">
+
+                <input id="signupphone" class="form-control my-3 bg-transparent text-white" placeholder="Enter phone">
+
+                <div class="text-start d-flex">
+                    <div class="me-4">
+                        <input id="signupmalegender" class=" my-3 bg-transparent text-white " type="radio" name="male">
+                        <label for="signupmalegender">male</label>
+                    </div>
+
+                    <div>
+                        <input id="signupfemalegender" class=" my-3 bg-transparent text-white" type="radio" name="male">
+                        <label for="signupfemalegender">female</label>
+                    </div>
+                </div>
+
+                <p id="alertsignup" class="d-none text-danger"></p>
+
+                <button id="signup" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+                <p class="text-white">You have an account? <a id="tologin" class="text-white" href="#">Sign in</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="loginform" class="">
+        <div class="container my-5 text-center">
+            <div class="group m-auto w-75 p-5">
+                <h1>Smart Login System</h1>
+
+                <input id="signinEmail" class="form-control my-3 bg-transparent text-white"
+                    placeholder="Enter your email" autofocus>
+
+                <input id="signinPassword" class="form-control  my-3 bg-transparent text-white"
+                    placeholder="Enter your password" type="password">
+
+                <label id="forgotPassword">Forgot Password ?</label>
+
+                <p id="alertsignin" class="d-none text-danger"></p>
+
+                <button id="signin" class="btn btn-outline-info w-100 my-3" id="btnLogin">Login</button>
+                <p class="text-white">Don’t have an account? <a id="tosignup" class="text-white" href="#">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="forgotPasswordform" class="d-none">
+        <div class="container my-5 text-center">
+            <div class="group m-auto w-75 p-5">
+                <h1>smart forgot password system</h1>
+
+                <input id="forgotEmail" class="form-control my-3 bg-transparent text-white" placeholder="email"
+                    autofocus>
+
+                <input id="forgotphone" class="form-control my-3 bg-transparent text-white" placeholder="phone">
+
+                <input id="newPassword" class="form-control my-3 bg-transparent text-white" placeholder="new password"
+                    type="password">
+
+                <input id="confirmPassword" class="form-control my-3 bg-transparent text-white"
+                    placeholder="confirm password" type="password">
+
+                <p id="alertforgotpassword" class="d-none text-danger"></p>
+
+                <button id="confirm" class="btn btn-outline-info w-100 my-3">confirm</button>
+                <p class="text-white">You have an account? <a id="tologinforgot" class="text-white" href="#">Sign in</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

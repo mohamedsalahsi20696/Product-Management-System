@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+    --main-color: rgb(20, 162, 184);
+    --background-color: rgb(36, 53, 63);
+}
+
+body {
+    color: var(--main-color);
+    background-color: var(--background-color);
+    text-transform: capitalize;
+}
+
+.group {
+    box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+
+.home {
+    height: 80vh;
+}
+
+#signupName::placeholder,
+#signupEmail::placeholder,
+#signupPassword::placeholder,
+#signupphone::placeholder,
+
+#signinEmail::placeholder,
+#signinPassword::placeholder,
+
+#forgotEmail::placeholder,
+#forgotphone::placeholder,
+#newPassword::placeholder,
+#confirmPassword::placeholder {
+    color: #fff;
+    opacity: .5;
+}
+
+.form-control:focus {
+    border: 2px solid var(--main-color);
+    box-shadow: none;
+}
+
+#forgotPassword {
+    cursor: pointer;
+}
