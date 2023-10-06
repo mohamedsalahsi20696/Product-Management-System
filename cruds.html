@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styleesheet-cruds.css">
+    <title>Product</title>
+</head>
+
+<body>
+
+    <section class="crud">
+        <div class="container">
+            <div class="m-auto text-center text-uppercase my-3">
+                <h1 id="head"></h1>
+                <p>product management system</p>
+            </div>
+
+            <div class="inputs">
+
+                <input id="title" class="form-control my-3 bg-transparent text-white" placeholder="title" autofocus>
+
+                <div class="prices d-flex justify-content-center align-items-center">
+                    <input id="price" class="form-control my-3 bg-transparent text-white me-2" type="number"
+                        placeholder="price">
+
+                    <input id="taxes" class="form-control my-3 bg-transparent text-white me-2" type="number"
+                        placeholder="taxes">
+
+                    <input id="ads" class="form-control my-3 bg-transparent text-white me-2" type="number"
+                        placeholder="ads">
+
+                    <input id="discount" class="form-control my-3 bg-transparent text-white me-2" type="number"
+                        placeholder="discount">
+
+                    <small id="total" class="bg-danger py-2 px-3 border border-1 rounded-3 d-flex"></small>
+                </div>
+
+                <input id="count" class="form-control my-3 bg-transparent text-white" type="number" placeholder="count">
+
+                <input id="category" class="form-control my-3 bg-transparent text-white" placeholder="category">
+
+                <button id="submit" class="btn w-100 my-3">Create</button>
+                <p id="alert" class="d-none text-danger text-center text-capitalize"></p>
+            </div>
+
+            <div class="outputs">
+                <div id="searchBlock">
+                    <input id="search" class="form-control my-3 bg-transparent text-white" placeholder="search">
+                    <div id="btnSearch" class="d-flex justify-content-between">
+                        <button id="searchTitle" class="btn w-100 me-5">Search by Title</button>
+                        <button id="searchCategory" class="btn w-100 ms-5">Search by
+                            Category</button>
+                    </div>
+                    <button id="deleteAll" class="btn w-100 mt-3 d-none"></button>
+                </div>
+                <table class="w-100 my-5 text-center">
+                    <thead class="text-uppercase">
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cruds.js"></script>
+</body>
+
+</html>

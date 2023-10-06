@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+    --main-color: #fff;
+    --background-color: #222;
+    --background-input-color: #111;
+    --button-color: #2b023b;
+    --button-hover-color: #64048a;
+    --focus-color: #000;
+    --letter-spacing: 1px;
+    --transition-time: .5s;
+}
+
+body {
+    color: var(--main-color);
+    background-color: var(--background-color);
+}
+
+/* inputs */
+.form-control {
+    background-color: var(--background-input-color) !important;
+}
+
+.form-control:focus {
+    background-color: var(--background-input-color);
+    transform: scale(1.05);
+    border: 2px solid var(--main-color);
+    box-shadow: none;
+}
+
+#title::placeholder,
+#price::placeholder,
+#taxes::placeholder,
+#ads::placeholder,
+#discount::placeholder,
+#count::placeholder,
+#category::placeholder,
+
+#search::placeholder {
+    color: #fff;
+    opacity: .5;
+}
+
+#total::before {
+    content: "Total:";
+}
+
+.inputs button,
+.outputs #searchBlock button,
+.outputs #deleteAll {
+    background-color: var(--button-color) !important;
+    color: var(--main-color) !important;
+    transition: letter-spacing var(--transition-time) !important;
+}
+
+.inputs button:hover,
+.outputs #searchBlock button:hover {
+    /* .outputs #deleteAll:hover { */
+    background-color: var(--button-hover-color) !important;
+    letter-spacing: var(--letter-spacing);
+}
+
+/* outputs */
+th,
+td {
+    padding: 5px;
+}
